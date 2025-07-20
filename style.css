@@ -21,14 +21,26 @@ header {
   margin-bottom: 2rem;
 }
 
-header h1 {
-  font-size: 2.5rem;
+.logo {
+  max-width: 180px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #00e5ff;
   margin-bottom: 0.5rem;
 }
 
-header h2 {
-  font-size: 1.2rem;
-  color: #ccc;
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #a3f3ff;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
 }
 
 .ebook-cover {
