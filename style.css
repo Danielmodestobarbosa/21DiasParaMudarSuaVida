@@ -28,18 +28,20 @@ header {
 }
 
 .title {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.2rem;
   font-weight: 700;
   color: #00e5ff;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px;
 }
 
 .subtitle {
-  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #a3f3ff;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   margin-bottom: 1rem;
 }
 
