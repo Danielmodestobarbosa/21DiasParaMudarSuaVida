@@ -1,55 +1,39 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to bottom right, #001f26, #0a0a0a);
   color: #fff;
+  margin: 0;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 2rem;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom right, #001f26, #0a0a0a);
 }
 
-.background-overlay::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at center, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
-  animation: pulse 10s infinite;
+#fundo-animado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 0;
+  pointer-events: none;
 }
 
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-}
-
-header {
-  text-align: center;
-  margin-bottom: 2rem;
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
-.logo {
-  max-width: 180px;
-  margin: 0 auto 1rem;
-  display: block;
+.text-content {
+  max-width: 450px;
 }
 
 .title {
@@ -67,26 +51,14 @@ header {
   font-weight: 400;
   color: #a3f3ff;
   letter-spacing: 1.5px;
-  margin-bottom: 1rem;
-}
-
-.ebook-cover {
-  max-width: 320px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
-  margin-bottom: 2rem;
-  position: relative;
-  z-index: 1;
+  margin-bottom: 1.5rem;
 }
 
 .description {
-  max-width: 600px;
-  text-align: center;
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
-  position: relative;
-  z-index: 1;
+  color: #e0f7fa;
 }
 
 .buy-button {
@@ -99,13 +71,19 @@ header {
   cursor: pointer;
   transition: background 0.3s, transform 0.3s;
   text-decoration: none;
-  position: relative;
-  z-index: 1;
+  display: inline-block;
 }
 
 .buy-button:hover {
   background-color: #0097a7;
   transform: scale(1.05);
+}
+
+.ebook-cover {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
 footer {

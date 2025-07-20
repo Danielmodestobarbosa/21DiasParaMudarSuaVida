@@ -1,29 +1,43 @@
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acorde com Propósito - Ebook</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acorde com Propósito</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="background-overlay"></div>
-  <header>
-  
-    <h1 class="title">Acorde com Propósito</h1>
-    <h2 class="subtitle">21 Dias para Mudar sua Vida</h2>
-  </header>
+  <!-- Fundo animado -->
+  <div id="fundo-animado"></div>
 
-  <img src="Capa e-book.png" alt="Capa do eBook Acorde com Propósito" class="ebook-cover">
+  <!-- Conteúdo principal -->
+  <div class="content-container">
+    <div class="text-content">
+      <header>
+        <h1 class="title">Acorde com Propósito</h1>
+        <h2 class="subtitle">21 Dias para Mudar sua Vida</h2>
+      </header>
+      <p class="description">
+        Um guia prático para criar hábitos, vencer a procrastinação e viver com mais motivação e clareza. Descubra como transformar seus dias em apenas 21 dias com ações simples e eficazes.
+      </p>
+      <a href="https://pay.kiwify.com.br/9hPkPyX" target="_blank" class="buy-button">Comprar Agora</a>
+    </div>
 
-  <p class="description">
-    Um guia prático para criar hábitos, vencer a procrastinação e viver com mais motivação e clareza. Descubra como transformar seus dias em apenas 21 dias com ações simples e eficazes.
-  </p>
-
-  <a href="https://pay.kiwify.com.br/9hPkPyX" target="_blank" class="buy-button">Comprar Agora</a>
+    <img src="Capa e-book.png" alt="Capa do eBook" class="ebook-cover" />
+  </div>
 
   <footer>
-    <p>Copyright &copy; 2025 Daniel Modesto. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Daniel Modesto. Todos os direitos reservados.</p>
   </footer>
+
+  <!-- Lib tParticles -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.1/tsparticles.bundle.min.js"></script>
+  <!-- Script animado separado -->
+  <script src="index.js"></script>
 </body>
 </html>
